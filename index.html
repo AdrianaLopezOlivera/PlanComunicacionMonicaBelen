@@ -6,6 +6,17 @@
     <title>Plan de Comunicación 2025</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html") 
+                .then(response => response.text()) 
+                .then(data => {
+                    document.getElementById("navbar-container").innerHTML = data; 
+                })
+                .catch(error => console.error("Error al cargar la barra de navegación:", error));
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -13,12 +24,7 @@
         <p>Diputada Local Mónica Belén López Javier</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Proyecto general</a></li>
-            <li><a href="manual.html">Manual de publicaciones</a></li>
-        </ul>
-    </nav>
+    <div id="navbar-container"></div>
     
     <main>
         <section>
@@ -41,7 +47,7 @@
                 <li><strong>Artesanas(os) y trabajadores locales:</strong> Mujeres y hombres que elaboran artesanías, textiles y productos tradicionales.</li>
                 <li><strong>Juventudes del distrito:</strong> Estudiantes y jóvenes interesadas e interesados en la participación ciudadana y/o con posibilidades de emplearse.</li>
                 <li><strong>Población migrante y sus familias:</strong> Conexión con paisanos dentro y fuera del estado.</li>
-                <li><strong>Comunidad general del distrito XVII y del estado de Oaxaca.</strong></li>
+                <li><strong>Comunidad en general del distrito XVII y del estado de Oaxaca.</strong></li>
             </ul>
         </section>
         
@@ -55,8 +61,8 @@
                 <h4><strong>Canales:</strong></h4>
                 <ul>
                     <li><strong>Redes sociales (80%):</strong> Facebook, Instagram, X, TikTok. Considerando transmisiones en vivo desde eventos y ferias.</li>
-                    <li><strong>Radio (10%)</strong></li>
-                    <li><strong>Impresos (10%)</strong></li>
+                    <li><strong>Radio (10%):</strong> Promoción en radiodifusoras locales.</li>
+                    <li><strong>Impresos (10%):</strong> Carteles en comunidades.</li>
                 </ul>
                 <p><strong>Actividades:</strong></p>
                 <ul>
@@ -65,6 +71,7 @@
                     <li>Organización de un evento en el Congreso para exhibir artesanías locales.</li>
                     <li>Producción de videos cortos explicando leyes que beneficien a los artesanos.</li>
                     <li>Difusión de material impreso sobre programas existentes, estatales y federales, que apoyan la economía de la comunidad de artesanos: programas de capacitación, microcréditos, etc.</li>
+                    <li>Reuniones con organizaciones de artesanas y artesanos y foros sobre temas de interés para este sector.</li>
                 </ul>
             </div>
         
@@ -83,6 +90,7 @@
                     <li>Videos de historias de vida de juventudes trabajadoras o talentosas de la región.</li>
                     <li>Concurso de videos en redes sobre cómo mejorar el comercio artesanal en el distrito.</li>
                     <li>Concurso de videos en redes sobre sus talentos originarios.</li>
+                    <li>Reuniones con organizaciones juveniles y foros sobre temas de interés para este sector.</li>
                 </ul>
             </div>
         
@@ -92,32 +100,32 @@
                 <p><strong>Objetivo:</strong> Crear puentes de comunicación con migrantes del distrito y sus familias.</p>
                 <h4><strong>Canales:</strong></h4>
                 <ul>
-                    <li><strong>Redes sociales (60%):</strong> Videos emotivos y mensajes directos.</li>
-                    <li><strong>Radio (30%):</strong> Con mensajes dirigidos a familias de migrantes, difundiendo leyes que les protegen y respaldan.</li>
+                    <li><strong>Redes sociales (70%):</strong> Videos emotivos y mensajes directos.</li>
+                    <li><strong>Radio (20%):</strong> Con mensajes dirigidos a familias de migrantes, difundiendo leyes que les protegen y respaldan.</li>
                     <li><strong>Impresos (10%):</strong> Folletos informativos en puntos estratégicos.</li>
                 </ul>
                 <p><strong>Actividades:</strong></p>
                 <ul>
                     <li>Historias en redes de familias migrantes destacadas.</li>
                     <li>Enlace con organizaciones migrantes en Estados Unidos: Escuchar para Legislar.</li>
-                    <li>Promoción de eventos como "Fiesta de los paisanos".</li>
                 </ul>
             </div>
         
-            <!-- Octubre-Diciembre: Resultados y Tradición -->
+            <!-- Octubre-Diciembre: Resultados-->
             <div class="sub-section">
-                <h3>Octubre-Diciembre: Resultados y Tradición</h3>
-                <p><strong>Objetivo:</strong> Resaltar logros legislativos y fomentar las tradiciones del distrito.</p>
+                <h3>Octubre-Diciembre: Resultados</h3>
+                <p><strong>Objetivo:</strong> Resaltar logros legislativos.</p>
                 <h4><strong>Canales:</strong></h4>
                 <ul>
                     <li><strong>Redes sociales (70%):</strong> Resúmenes anuales en video.</li>
-                    <li><strong>Radio (20%):</strong> Entrevistas y programas sobre resultados legislativos.</li>
-                    <li><strong>Impresos (10%):</strong> Revistas con logros y acciones.</li>
+                    <li><strong>Radio (15%):</strong> Entrevistas y programas sobre resultados legislativos.</li>
+                    <li><strong>Impresos (10%):</strong> Revistas y/o volantes con logros y acciones.</li>
+                    <li><strong>Bardas y otros medios visuales (5%):</strong> Pintado estratégico en comunidades.</li>
                 </ul>
                 <p><strong>Actividades:</strong></p>
                 <ul>
                     <li>Publicación mensual de logros en formato digital.</li>
-                    <li>Promoción de festivales tradicionales en el distrito.</li>
+                    <li>Informe de Actividades (al aire libre), en Tlacolula de Matamoros.</li>
                     <li>Rifa de productos artesanales en redes sociales.</li>
                 </ul>
             </div>
@@ -125,23 +133,24 @@
         
         <!-- Distribución de Recursos -->
         <section>
-            <h2>Distribución de Recursos</h2>
+            <h2>Distribución de Recursos Económicos</h2>
             <ul>
-                <li><strong>Redes sociales: (60%) </strong>Publicidad, diseño gráfico, creación de contenido multimedia.</li>
-                <li><strong>Radio: (25%) </strong>Espacios publicitarios y programas.</li>
-                <li><strong>Impresos: (10%) </strong>Carteles, folletos, revistas.</li>
-                <li><strong>Bardas y otros medios visuales: (5%) </strong>Pintado estratégico en comunidades.</li>
+                <li><strong>Redes sociales (60%):</strong>Publicidad, diseño gráfico, creación de contenido multimedia.</li>
+                <li><strong>Radio (25%):</strong>Espacios publicitarios y programas.</li>
+                <li><strong>Impresos (10%):</strong>Carteles, folletos, revistas.</li>
+                <li><strong>Bardas y otros medios visuales (5%):</strong>Pintado estratégico en comunidades.</li>
             </ul>
+            <canvas id="graficaPastel" width="400" height="400"></canvas>
         </section>
         
         <!-- Métricas de Éxito -->
         <section>
-            <h2>Métricas de Éxito</h2>
+            <h2>Métricas de Éxito Anual</h2>
             <ul>
-                <li>Alcance en redes sociales: Incremento del 30% en seguidores e interacciones mensuales.</li>
-                <li>Asistencia a eventos: Al menos 20 participantes por feria/exposición.</li>
-                <li>Participación juvenil: Incremento del 20% en actividades dirigidas a jóvenes.</li>
-                <li>Conexión con migrantes: Al menos 10 nuevas organizaciones vinculadas.</li>
+                <li><strong>Alcance en redes sociales: </strong>Incremento del 30% en seguidores e interacciones mensuales.</li>
+                <li><strong>Asistencia a eventos: </strong>Al menos 20 participantes por feria/exposición.</li>
+                <li><strong>Participación juvenil: </strong>Incremento del 20% en actividades dirigidas a jóvenes.</li>
+                <li><strong>Conexión con migrantes:</strong> Al menos 3 nuevas organizaciones vinculadas.</li>
             </ul>
         </section>        
     </main>
@@ -149,5 +158,10 @@
     <footer>
         <p>&copy; 2025 Adriana López Olivera. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="grafica.js"></script>
 </body>
 </html>

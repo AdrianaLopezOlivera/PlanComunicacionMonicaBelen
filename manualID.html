@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Identidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html") 
+                .then(response => response.text()) 
+                .then(data => {
+                    document.getElementById("navbar-container").innerHTML = data; 
+                })
+                .catch(error => console.error("Error al cargar la barra de navegación:", error));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Plan de Comunicación 2025</h1>
+        <p>Diputada Local Mónica Belén López Javier</p>
+    </header>
+
+    <div id="navbar-container"></div>
+    <section>
+        <h2>PENDIENTE</h2>  
+    </section>
+    
+    
+</body>
+</html>
