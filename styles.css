@@ -167,7 +167,7 @@ blockquote p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;  /* El iframe ocupará todo el ancho del contenedor */
+    width: 90%;  /* El iframe ocupará todo el ancho del contenedor */
     height: 100%; /* El iframe ocupará todo el alto del contenedor */
 }
 iframe {
