@@ -135,12 +135,46 @@ blockquote p {
         gap: 1rem;
     }
 }
-/* Estilos para hacer la gráfica responsiva */
+
 #graficaPastel {
     max-width: 100%; /* Que no exceda el ancho del contenedor */
     height: auto;    /* Mantiene la proporción de la gráfica */
     display: block;  /* Evita el espacio adicional */
     margin: 0 auto;  /* Centrar la gráfica */
+}
+
+.gif-container {
+    max-width: 100%; /* Evita que el contenedor del gif se desborde */
+    height: auto;    /* Mantiene la proporción del gif */
+    display: block;  /* Elimina los márgenes innecesarios */
+    margin: 0 auto;  /* Centra el gif horizontalmente */
+}
+
+.gif-container img {
+    width: 100%; /* Hace que el gif ocupe el 100% del ancho disponible */
+    height: auto; /* Mantiene la proporción del gif */
+}
+.iframe-container {
+    position: relative;
+    width: 100%;   /* El contenedor ocupará el 100% del ancho disponible */
+    padding-bottom: 136.6%;  /* Proporción de 500x683 (683/500 = 1.366) */
+    height: 0;     /* Altura inicial 0 */
+    overflow: hidden;
+    max-width: 100%;  /* Asegura que no exceda el ancho del contenedor */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* El iframe ocupará todo el ancho del contenedor */
+    height: 100%; /* El iframe ocupará todo el alto del contenedor */
+}
+iframe {
+    max-width: 100%; /* El iframe no excederá el 100% del contenedor */
+    height: auto;    /* Mantiene la proporción de la altura */
+    display: block;  /* Elimina el espacio adicional */
+    margin: 0 auto;  /* Centra el iframe horizontalmente */
 }
 
 @media (max-width: 480px) {
