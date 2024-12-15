@@ -5,7 +5,10 @@ let typewriter = new Typewriter(app, {
     delay: 75,
 });
 
-typewriter
+typewriter.typeString("PENDIENTE")
+    .pauseFor(3000)
+    .deleteAll()
+    .pauseFor(700)
     .typeString("En construcción...")
     .pauseFor(3000)
     .deleteAll()
